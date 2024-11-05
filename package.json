@@ -1,0 +1,16 @@
+{
+  "name": "jeesappan",
+  "version": "1.0.0",
+  "description": "for mern course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "mongoose": "^8.8.0",
+    "node": "^22.11.0"
+  }
+}
