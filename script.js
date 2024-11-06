@@ -1,10 +1,10 @@
-const path=require('path')//its a module that get us path
-const fs=require('fs')
-const user="JeesAppan"
-fs.readFile(path.join(__dirname,"/api2","api.txt"),"utf8",(err,data)=>{
-    if(err) throw err;
+const EventEmitter=require("events");
+const emitter=new EventEmitter();
+emitter.on(`${message}`,(data)=>{
     console.log(data)
 });
-
-
-  
+emitter.on(`${logout}`,(data)=>{
+    console.log(data)
+});
+emitter.emit(message="User logged in");
+emitter.emit(logout="User logged out");
